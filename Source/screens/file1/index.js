@@ -78,7 +78,7 @@ const ProductListing = props => {
         data={ProductData}
         renderItem={renderItem}
         ItemSeparatorComponent={renderItemSeparotor}
-        keyExtractor={item => item.id}
+        keyExtractor={(item, index) => index + ''}
       />
     </View>
   );

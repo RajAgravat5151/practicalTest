@@ -11,6 +11,9 @@ export const styles = StyleSheet.create({
     color: Colors.black,
     marginRight: 10,
   },
+  view1: {
+    flexDirection: 'row',
+  },
   radioButtonV1: {
     height: 20,
     width: 20,

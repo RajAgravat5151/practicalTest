@@ -8,16 +8,16 @@ const RadioButton = props => {
   let availableColor = props.colors;
   return (
     <View style={styles.radioButtonView}>
-      {myColors.map(item => {
+      {myColors.map((item, index) => {
         return (
-          <>
+          <View style={styles.view1} key={index + ''}>
             <View style={styles.radioButtonV1}>
               {availableColor.includes(item) && (
                 <View style={styles.radioButtonV2} />
               )}
             </View>
             <Text style={styles.textStyle}>{item}</Text>
-          </>
+          </View>
         );
       })}
     </View>
